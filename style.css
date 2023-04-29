@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Krona+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    background-color: #5e6373;
+}
+
+body {
+    width: 100%;
+    color: #eee;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+#container {
+    margin: auto;
+    margin-top: 2.5em;
+    width: 90%;
+    background-color: #fff3;
+    border-radius: 40px;
+}
+
+#img-perfil {
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+#titulo {
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    width: 85%;
+    font-weight: lighter;
+    margin-bottom: 48px;
+}
+
+#img-email{
+    width: 46px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer {
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 56px;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+    display: flex;
+    padding: 1em;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.icone {
+    width: 28px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    padding: 0.5em;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#email {
+    background-color: #484c56;
+    width: 85%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: white;
+    height: 3em;
+}
