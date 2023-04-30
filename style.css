@@ -15,6 +15,8 @@ html {
     
     
     background-color: #5e6373;
+
+    height: 140%;
 }
 
 body {
@@ -26,29 +28,30 @@ body {
 
 #container {
     margin: auto;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     width: 90%;
     background-color: #fff3;
     border-radius: 40px;
+    max-width: 510px;
 }
 
 #img-perfil {
     width: 160px;
     border-radius: 50%;
     border: 3px solid #eee;
-    margin-top: 48px;
-    margin-bottom: 24px;
+    margin-top: 44px;
+    margin-bottom: 20px;
 }
 
 #titulo {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     letter-spacing: 4px;
     font-size: 0.75em;
     font-weight: lighter;
 }
 
 h1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-family: 'Krona One', sans-serif;
     font-size: 2em;
 }
@@ -57,7 +60,7 @@ p {
     text-align: center;
     width: 85%;
     font-weight: lighter;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
 }
 
 #img-email{
@@ -70,51 +73,76 @@ main {
     align-items: center;
     
 }
-
 footer {
     border-top: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #eee;
     border-radius: 0 0 40px 40px;
-    margin-bottom: 56px;
 }
 
-ul {
-    list-style: none;
-    list-style-position: inside;
-    display: flex;
-    padding: 1em;
+#footer-content {
     width: 85%;
-    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .icone {
     width: 28px;
 }
 
+#list {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
 li {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 2em;
+    height: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    padding: 0.5em;
-    border: 1px solid black;
-    cursor: pointer;
-}
+} 
 
 #email {
+    width: 100%;
     background-color: #484c56;
-    width: 85%;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
     text-decoration: none;
     color: white;
-    height: 3em;
+    height: 50px;
+} 
+
+@media screen and (min-width: 510px){
+    #footer-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+    
+    #email {
+        width: 40%;
+    }
+
+    #list {
+        width: 55%;
+    }
 }
