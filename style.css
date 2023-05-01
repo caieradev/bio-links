@@ -30,7 +30,7 @@ body {
     margin: auto;
     margin-top: 1.5em;
     width: 90%;
-    background-color: #fff3;
+    background-color: #fff4;
     border-radius: 40px;
     max-width: 510px;
 }
@@ -120,7 +120,7 @@ li {
 
 #email {
     width: 100%;
-    background-color: #484c56;
+    background-color: #b3001b;
     border-radius: 50px;
     display: flex;
     align-items: center;
